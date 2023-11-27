@@ -6,12 +6,11 @@ header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 $host = 'localhost';
 $db_name = 'todo_app';
 $username = 'root';
-$password = '';
+$password = '123';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db_name", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 } catch (PDOException $e) {
     // Handle database connection errors
     echo "Database connection failed: " . $e->getMessage();
