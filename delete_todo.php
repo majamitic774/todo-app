@@ -21,14 +21,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     } else {
         // Return an error message if the todo ID is missing
         echo json_encode(array("message" => "Todo ID is required"));
-}
+    }
 }
 
-$student = ["name" => "Dusan"];
-$student["name"];
+// $student = ["name" => "Dusan"];
+// $student["name"];
 
-class Student{
-    public $name;
-}
-$student = new Student();
-$student->name;
+// class Student{
+//     public $name;
+// }
+// $student = new Student();
+// $student->name;
